@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallmax Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="/images/logo.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Wallmax Technologies</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Welcome to</span>
+                    <br><span class="typewriter" id="typewriter"></span>
+                </h1>
+                <p class="hero-description">
+                    We craft powerful digital solutions through web development, SEO, social media marketing, and mobile app development. Our mission is to elevate your online presence and drive measurable growth.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">About us</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card" id="card-1">
+                   <i class="fa-solid fa-globe" style="color: #FFD43B;"></i>
+                    <span>Web Development</span>
+                </div>
+                <div class="floating-card" id="card-2">
+                    <i class="fa-solid fa-comments-dollar" style="color: #63E6BE;"></i>
+                    <span>SEO Optimization</span>
+                </div>
+                <div class="floating-card" id="card-3">
+                     <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>App Development</span>
+                </div>
+                <div class="floating-card" id="card-4">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Custom Logo Design</span>
+                </div>
+                <div class="hero-particles" id="particles"></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main" id="services">
+        <div class="container">
+            <h1 class="section-title">Services Provided</h1>
+            <div class="sections-grid">
+                <!-- Section 1: Lightning Fast Performance -->
+                <div class="section-card" id="desc1">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Web Design</h3>
+                        <p class="card-description">
+                            We craft stunning, user-friendly websites that elevate your brand and engage your audience. From sleek design to seamless functionality, we bring your vision to life online.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Enterprise Security -->
+                <div class="section-card" id="desc2">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Maps SEO</h3>
+                        <p class="card-description">
+                            Boost your local visibility with expert Maps SEO strategies that put your business on the map. We optimize your presence on Google Maps to drive foot traffic and local leads.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Global Reach -->
+                <div class="section-card" id="desc3">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Social Media Marketing</h3>
+                        <p class="card-description">
+                            Grow your brand and connect with your audience through powerful social media strategies. We create engaging content and targeted campaigns that drive real results.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Team Collaboration -->
+                <div class="section-card" id="desc4">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Logo Design</h3>
+                        <p class="card-description">
+                            Make a lasting first impression with a custom logo that captures your brand’s identity. We design unique, memorable logos that stand out across all platforms.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Mobile First Design -->
+                <div class="section-card" id="desc5">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Ecommerce Development</h3>
+                        <p class="card-description">
+                            Ecommerce development service providers specialize in creating and maintaining online stores tailored to business needs. They offer end-to-end solutions including design, development, integration, and ongoing support to ensure smooth ecommerce operations.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                <!-- Section 6: Analytics & Insights -->
+                <div class="section-card" id="desc6">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"stroke-linecap="round" stroke-linejoin="round">  <!-- Phone body -->
+                               <rect x="7" y="2" width="10" height="20" rx="2"></rect>
+                                 <line x1="7" y1="6" x2="17" y2="6"></line>
+                               <line x1="7" y1="18" x2="17" y2="18"></line>
+                               <circle cx="12" cy="16" r="1"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Mobile App Development</h3>
+                        <p class="card-description">
+                            Turn your ideas into powerful mobile apps with seamless performance and intuitive design. We build custom iOS and Android solutions that engage users and drive growth.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                   <div class="section-card" id="desc7">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                           <polyline points="3,7 12,13 21,7"></polyline>
+                          <rect x="3" y="7" width="18" height="10" rx="2"></rect>
+                          <polyline points="16,12 20,10 20,14 16,12"></polyline>
+                          <line x1="20" y1="12" x2="22" y2="12"></line>
+                         </svg>
+                        </div>
+                        <h3 class="card-title">Email Marketing</h3>
+                        <p class="card-description">
+                            We offer professional email marketing services to help you reach your audience with targeted, engaging campaigns. From strategy and design to automation and analytics, we drive results that grow your business.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                   <div class="section-card" id="desc8">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Analytics & Insights</h3>
+                        <p class="card-description">
+                            "We craft innovative and functional architectural designs that bring your dream spaces to life.From concept to creation, we deliver timeless solutions that blend beauty with purpose.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+
+                   <div class="section-card" id="desc9">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <polyline points="3,7 21,7 21,17 3,17 3,7"></polyline>
+                              <polyline points="8,7 10,3 14,3 16,7"></polyline>
+                             <circle cx="12" cy="12" r="3"></circle>
+                              <line x1="18" y1="7" x2="18" y2="7"></line>
+                             </svg>
+                        </div>
+                        <h3 class="card-title">Product Photography</h3>
+                        <p class="card-description">
+                            Make data-driven decisions with comprehensive analytics, real-time reporting, and actionable insights that drive growth.
+                        </p>
+                        <div class="hover-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="Digital-Marketing">  
+            <div class="inner-cont">
+                <div class="main-container"> 
+                 <div>
+                   <h1>We Offer a Full Range of Digital Marketing Services!</h1>
+                   <p class="cont-head">If you are looking to promote your products or services, you need to discover yourself easily on the internet. As a digital marketing company, by increasing your visibility, we will discover you and drive customers to your site.</p>
+                    <h2>Website</h2>
+                  <div class="progress-container">
+                    <div class="progress-bar" id="progressBar1">0%</div>
+                 </div>
+                 </div>
+                    <div>
+                 <h2>SEO</h2>
+                 <div class="progress-container">
+                     <div class="progress-bar" id="progressBar2">0%</div>
+                </div>
+                </div>
+                <div>
+                   <h2>Social Media</h2>
+                 <div class="progress-container">
+                     <div class="progress-bar" id="progressBar3">0%</div>
+                 </div>
+                 </div>
+            </div>
+            <div class="second-cont">
+                <div>
+                    <img class="cont-img" src="/images/social.png"/>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+
+    <!-- About Section -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About <span>Wallmax</span></h2>
+      <p>
+        wallmax is a dynamic platform  committed to transforming ideas into impactful solutions. 
+        We specialize in blending cutting-edge technology with creative design to build 
+        products that inspire and empower businesses globally.
+      </p>
+      <p>
+        Our mission is simple: accelerate innovation, drive digital transformation, and 
+        deliver value that lasts.
+      </p>
+   <div class="abt-ctn">
+     <div class="abt-ctn-one">
+         <div class="abt-num" data-target="100">0</div>
+         <h2>Clients</h2>
+         </div>
+     <div class="abt-ctn-two">
+      <div class="abt-num" data-target="50">0</div>
+          <h2>Countries</h2>
+        </div>
+     <div class="abt-ctn-three">
+      <div class="abt-num" data-target="200">0</div>
+       <h2>Business</h2>
+     </div>
+    <div class="abt-ctn-four">
+     <div class="abt-num" data-target="300">0</div>
+     <h2>Codings hours</h2>
+     </div>
+    </div>
+      <button class="about-btn">Discover More</button>
+    </div>
+  </div>
+</section>
+
+    <!-- review Section -->
+   <section id="review" class="review">
+    <div class="review-container">
+      
+      <div class="first-container">
+        <h1>Our Happy Customers</h1>
+        <img src="/images/review.png" alt="Customer Review Icon" />
+      </div>
+      
+      <div class="middle-cont">
+      <div class="second-container">
+        <div class="reviews">
+
+          <div class="rev-cont rev-cont-one active">
+            <p class="rev-abt">Working with Wallmax Technologies has been an outstanding experience from start to finish. They took the time to truly understand our business needs and delivered a sleek, high-performing website that exceeded our expectations. The team was responsive, detail-oriented, and consistently went the extra mile to ensure everything was perfect.</p>
+           <div class="rev-grp">
+            <p class="reviewers"> Priya K</p>
+            <p class="reviewers">Marketing Manager at Solvix Corp</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            </div>
+          </div>
+
+          <div class="rev-cont rev-cont-two">
+            <p class="rev-abt">Working with Wallmax Technologies on our SEO strategy has been a game-changer for our business. Before partnering with them, we were struggling to appear in search results, but within just a few months, our website traffic and search engine rankings improved dramatically.</p>
+           <div class="rev-grp">
+            <p class="reviewers">Amit R</p>
+            <p class="reviewers">Founder, BrightEdge Interiors</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>            
+            </div>
+          </div>
+          </div>
+
+          <div class="rev-cont rev-cont-three">
+            <p class="rev-abt">We partnered with Wallmax Technologies for a complete overhaul of our company website, and we couldn’t be more satisfied with the results. From the very beginning, their team was highly professional, communicative, and truly understood our vision. They delivered a sleek, responsive, and user-friendly site that perfectly aligns with our brand identity.</p>
+            <div class="rev-grp">
+            <p class="reviewers"> Sarah L</p>
+            <p class="reviewers">Marketing Director, Nexa Solutions</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+          </div>
+
+        </div>
+        </div>
+            <div class="review-buttons">
+            <button data-target="1">1</button>
+             <button data-target="2">2</button>
+            <button data-target="3">3</button>
+            </div>        
+      </div>
+    </div>
+  </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">We are Expertise In</h2>
+            <div class="skill-img-cont">
+                <img class="skill-img" src="/images/html.png" alt="">
+                <img class="skill-img" src="/images/css.png" alt="">
+                <img class="skill-img" src="/images/js.png" alt="">
+                <img class="skill-img" src="/images/node.png" alt="">
+                <img class="skill-img" src="/images/facebook.jpg" alt="">
+                <img class="skill-img" src="/images/instagram.png" alt="">
+                <img class="skill-img" src="/images/mysql.png" alt="">
+                <img class="skill-img" src="/images/ps.jpg" alt="">
+                <img class="skill-img" src="/images/seo.png" alt="">
+                <img class="skill-img" src="/images/youtube.png" alt="">
+                <img src="/images/android.png" alt="" class="skill-img">
+                <img src="/images/ios.png" alt="" class="skill-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Ready to bring your ideas to life? Get in touch and let's create something amazing together.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>vasanthalingam67@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9787334421</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chennai</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+  
+  <button class="whatsapp-button" onclick="openWhatsApp()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </button>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 © Wallmax Technologies, Best Digital Marketing Agency.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+
+    <script src="script.js"></script>
+    <script>
+     function openWhatsApp() {
+  const phoneNumber = "9787334421"; // Replace with your full international number (e.g., 919876543210)
+  const message = "Hello, I saw your website and I'm interested in your services."; // Customize your message
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+}
+    </script>
+</body>
+</html>
